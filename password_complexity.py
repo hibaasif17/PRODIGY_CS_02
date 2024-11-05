@@ -3,8 +3,7 @@ COMMON_PASSWORDS = {
     "password", "123456", "123456789", "qwerty", "abc123", "letmein", "monkey",
     "iloveyou", "admin", "welcome", "12345", "1234", "1q2w3e4r", "password1",
     "qwerty123", "12345678", "sunshine", "princess", "football", "123123",
-    "dragon", "passw0rd", "password123", "123321"
-}
+    "dragon", "passw0rd", "password123", "123321" }
 
 def assess_password_strength(password):
     length_criteria = len(password) >= 8
@@ -29,12 +28,10 @@ def assess_password_strength(password):
     else:
         strength = "Strong"
         feedback = "Your password is strong. Good job!"
-
     return strength, feedback
 
 if __name__ == "__main__":
     while True:
-        # Get password input from the user
         password = input("Enter a password to assess its strength: ")
         strength, feedback = assess_password_strength(password)
         
